@@ -47,8 +47,8 @@ class HBNBCommand(cmd.Cmd):
         if not ('.' in line and '(' in line and ')' in line):
             return line
         
-        try: # parse line left to right
-            pline = line[:] # parsed line
+        try:  # parse line left to right
+            pline = line[:]  # parsed line
             
             # # isolate <class name>
             _cls = pline[:pline.find('.')]
@@ -246,7 +246,7 @@ class HBNBCommand(cmd.Cmd):
         args = args.partition(" ")
         if args[0]:
             c_name = args[0]
-        else: # class name not present
+        else:  # class name not present
             print("** class name missing **")
             return
         if c_name not in HBNBCommand.classes: # class name invalid
@@ -257,7 +257,7 @@ class HBNBCommand(cmd.Cmd):
         args = args[2].partition(" ")
         if args[0]:
             c_id = args[0]
-        else: # id not present
+        else:  # id not present
             print("** instance id missing **")
             return
         
@@ -276,7 +276,7 @@ class HBNBCommand(cmd.Cmd):
             for k, v in kwargs.items():
                 args.append(k)
                 args.append(v)
-        else: #isolate args
+        else:  #isolate args
             args = args[2]
             if args and args[0] == '\"': # check for quoted arg
                 second__quote = args.find('\"', 1)
