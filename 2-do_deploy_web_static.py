@@ -4,6 +4,7 @@ import os.path
 from fabric.api import env
 from fabric.api import put
 from fabric.api import run
+from fabric.exceptions import AbortOperation
 
 env.hosts = ["34.207.121.60", "100.25.164.228"]
 
