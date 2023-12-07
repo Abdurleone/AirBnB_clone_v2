@@ -37,4 +37,4 @@ def do_deploy(archive_path):
         abort("Deployment failed: {}".format(str(e)))
 
 # Example of usage
-do_deploy()
+do_deploy('versions/web_static_20170315003959.tgz')
