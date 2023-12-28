@@ -2,7 +2,7 @@
 """This is the file storage class for AirBnB"""
 import json
 from models.base_model import BaseModel
-from model.user import User
+from models.user import User
 from models.state import State
 from models.city import City
 from models.amenity import Amenity
