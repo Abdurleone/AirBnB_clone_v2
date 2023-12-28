@@ -15,12 +15,11 @@ def display_hbnb():
                            states=states,
                            amenities=amenities,
                            places=places)
-    
-    
+
+ 
 @app.teardown_appcontext
 def teardown(exc):
     storage.close()
-    
-    
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)      
+    app.run(host="0.0.0.0", debug=True)
