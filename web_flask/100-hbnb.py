@@ -16,7 +16,7 @@ def display_hbnb():
                            amenities=amenities,
                            places=places)
 
- 
+
 @app.teardown_appcontext
 def teardown(exc):
     storage.close()
