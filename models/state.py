@@ -17,7 +17,7 @@ class State(BaseModel, Base):
     name = Column(String(128), nullable=False)
     cities = relationship('City', backref='state', cascade='delete')
 
-    if ("HBNB_TYPE_STORAGE", None) is None:
+    if ("HBNB_TYPE_STORAGE", None) == None:
         @property
         def cities(self):
             Clist = []

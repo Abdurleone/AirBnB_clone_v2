@@ -49,7 +49,7 @@ class DBStorage:
             tables = [User, State, City, Amenity, Place, Review]
 
         else:
-            if type(cls) == str:
+            if type(cls) is str:
                 cls = eval(cls)
 
             tables = [cls]
